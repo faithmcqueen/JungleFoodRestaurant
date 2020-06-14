@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jungle Food Restaurant</title>
+		<meta charset="utf-8">
+		<!-- <script type="text/javascript" src="scripts/homepage.js" ></script> -->
+		
+
+
+		<script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+		
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="scripts/script.js" ></script>
+
+
+
+		<script src="https://kit.fontawesome.com/694833605e.js" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/Body.css" />
+		<link rel="stylesheet" href="styles/menu_book_style.css"/>
+
+	</head>
+	<body>
+		<header id="header">
+			<h1 class="hidden">Jungle Food Restaurant</h1>
+			<a href="index.html"><img alt="Jungle Food Logo" id="logo" src="images/Logo.png" width="125px" /></a>
+
+			<!-- nav menu -->
+			<nav id="navigation">
+				<ul id="main-menu">
+					<li id="link1"><a href="about.html">About</a></li>
+					<li id="link2"><a href="menu.html">Menus</a></li>
+					<li id="link3"><a href="contests.html">Contests</a></li>
+					<li id="link4"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<div id="page-container">
+		<div class="page-wrapper">
+			<h1 class="center_headings">Menu</h1>
+
+			<div id="menu_info" class="text-white">
+				Our menu features an array of delicious items and tropical treats, crafted around our values of seasonality and sustainability. 
+			</div>
+			<h2 class="center_headings heading_white"> </h2>
+
+			<main id="tabs">
+				<ul>
+					<!-- ICONS USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+					<li><a href="#tabs-1">Brunch</a><img class="menu_icon"src="images/menu_icons/menu_egg.jpg"></li>
+					<li><a href="#tabs-2">Appetizers</a><img class="menu_icon"src="images/menu_icons/menu_nacho.png"></li>
+					<li><a href="#tabs-3">Mains</a><img class="menu_icon"src="images/menu_icons/menu_taco.png"></li>
+					<li><a href="#tabs-4">Dessert</a><img class="menu_icon"src="images/menu_icons/menu_dessert.png"></li>
+					<li><a href="#tabs-5">Cocktails</a><img class="menu_icon"src="images/menu_icons/menu_cocktail.png"></li>
+				</ul>
+
+				<div class="menu_section" id="menu_brunch">
+					<div id="tabs-1" class="menubox">
+						<div class="menu_flex">
+							<div class="menu_aside">
+								<a href="#" title="Acai bowl">
+									<img class="menu_img" src="images/menu_images/acaibowl.png">
+									<!-- IMG SRC: https://www.layersofhappiness.com/california-inspired-acai-sunrise-bowl/-->
+									<!-- IMG USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+								</a>
+							</div>
+							<div class="menu_aside">
+								<div class="menu_item">
+								    <p class="menu-title">Arepas</p>
+								    <span class="price">$9.00</span>
+								    <!--<a href="#" data-name="Arepas" data-price="5.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Coconut French Toast</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Coconut French Toast" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Yuca-Bacon Breakfast Tacos</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Yuca-Bacon Breakfast Tacos" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Acai Bowl</p>
+								    <span class="price">$12.00</span>
+								    <!--<a href="#" data-name="Acai Bowl" data-price="12.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Avocado Toast with Eggs</p>
+								    <span class="price">$12.00</span>
+								    <!--<a href="#" data-name="Avocado Toast with Eggs" data-price="12.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Spanish Omelette</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Spanish Omelette" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_section" id="menu_appetizer">
+					
+					<div class="menu_flex">
+						<div id="tabs-2" class="menubox">
+							<div class="menu_flex">
+
+								<div class="menu_aside">
+									<a href="#" title="Guacamole and Chips">
+										<img class="menu_img" src="images/menu_images/gaucandchips.png">
+										<!-- IMG SRC: https://healthynibblesandbits.com/how-to-make-baked-tortilla-chips/ -->
+										<!-- IMG USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+									</a>
+								</div>
+
+								<div class="menu_aside">
+									<div class="menu_item">
+									    <p class="menu-title">Nachos</p>
+									    <span class="price">$12.00</span>
+									    <!--<a href="#" data-name="Nachos" data-price="12.00" class="add-to-cart btn btn-primary">
+									    	<span class="fas fa-plus fa-xs"></span>
+									    </a>-->
+									</div>
+
+									<div class="menu_item">
+									    <p class="menu-title">Guacamole & Chips</p>
+									    <span class="price">$10.00</span>
+									    <!--<a href="#" data-name="Guacamole & Chips" data-price="10.00" class="add-to-cart btn btn-primary">
+									    	<span class="fas fa-plus fa-xs"></span>
+									    </a>-->
+									</div>
+
+									<div class="menu_item">
+									    <p class="menu-title">Yuca Fritas</p>
+									    <span class="price">$8.00</span>
+									    <!--<a href="#" data-name="Yuca Fritas" data-price="8.00" class="add-to-cart btn btn-primary">
+									    	<span class="fas fa-plus fa-xs"></span>
+									    </a>-->
+									</div>
+
+									<div class="menu_item">
+									    <p class="menu-title">Calamari</p>
+									    <span class="price">$14.00</span>
+									    <!--<a href="#" data-name="Calamari" data-price="14.00" class="add-to-cart btn btn-primary">
+									    	<span class="fas fa-plus fa-xs"></span>
+									    </a>-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_section" id="menu_mains">
+					<div id="tabs-3" class="menubox">
+						<div class="menu_flex">
+
+							<div class="menu_aside">
+								<a href="#" title="Tacos">
+									<img class="menu_img" src="images/menu_images/tacos.png">
+									<!-- IMG SRC: https://damndelicious.net/2019/08/06/easy-chicken-tacos/ -->
+									<!-- IMG USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+								</a>
+							</div>
+
+							<div class="menu_aside">
+
+								<div class="menu_item">
+								    <p class="menu-title">Tacos</p>
+								    <span class="price">$14.00</span>
+								    <!--<a href="#" data-name="Tacos" data-price="14.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Burrito</p>
+								    <span class="price">$15</span>
+								    <!--<a href="#" data-name="Burrito" data-price="15.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Pineapple Pork Chops</p>
+								    <span class="price">$15.00</span>
+								    <!--<a href="#" data-name="Pineapple Pork Chops" data-price="15.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Fajitas</p>
+								    <span class="price">$18.00</span>
+								    <!--<a href="#" data-name="Fajitas" data-price="18.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Garlic Scampi</p>
+								    <span class="price">$15.00</span>
+								    <!--<a href="#" data-name="Garlic Scampi" data-price="15.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Guacamole Black Bean Burger</p>
+								    <span class="price">$14.00</span>
+								    <!--<a href="#" data-name="Guacamole Black Bean Burger" data-price="14.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_section" id="menu_desserts">
+					<div id="tabs-4" class="menubox">
+						<div class="menu_flex">
+
+							<div class="menu_aside">
+								<a href="#" title="Arroz con Leche"></a>
+								<img class="menu_img" src="images/menu_images/arrozconleche.png">
+								<!-- IMG SRC: https://www.isabeleats.com/arroz-con-leche-mexican-rice-pudding/ -->
+								<!-- IMG USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+
+							</div>
+
+							<div class="menu_aside">
+								<div class="menu_item">
+								    <p class="menu-title">Volcano Sundae</p>
+								    <span class="price">$8.00</span>
+								    <!--<a href="#" data-name="Volcano Sundae" data-price="8.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Arroz con Leche</p>
+								    <span class="price">$8.00</span>
+								    <!--<a href="#" data-name="Arroz con Leche" data-price="8.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Lilikoi Shaved Ice</p>
+								    <span class="price">$6.00</span>
+								    <!--<a href="#" data-name="Lilikoi Shaved Ice" data-price="6.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Churro Cheesecake</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Churro Cheesecake" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_section" id="menu_cocktails">
+					<div id="tabs-5" class="menubox">
+						<div class="menu_flex">
+
+							 <div class="menu_aside">
+							 	<a href="#" title="Citrus Kombucha Mezcal Cocktail">
+									<img class="menu_img" src="images/menu_images/mezcalkombucha.png">
+									<!-- IMG SRC: https://www.cottercrunch.com/kombucha-mezcal-cocktails/ -->
+									<!-- IMG USED WITHOUT PERMISSION; FOR EDUCATIONAL PURPOSES ONLY -->
+								</a>
+							</div>
+
+							<div class="menu_aside">
+								<div class="menu_item">
+								    <p class="menu-title">Pineapple Whisky Sour</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Pineapple Whisky Sour" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Pi&#241;a Colada</p>
+								    <span class="price">$10.00</span>
+								    <!--<a href="#" data-name="Pi&#241;a Colada" data-price="10.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Mezcal Margaritas</p>
+								    <span class="price">$12.00</span>
+								    <!--<a href="#" data-name="Mezcal Margaritas" data-price="12.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Sangria</p>
+								    <span class="price">$8.00</span>
+								    <!--<a href="#" data-name="Sangria" data-price="8.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+							    	<p class="menu-title">Citrus Kombucha Mezcal Cocktail</p>
+								    <span class="price">$12.00</span>
+								    <!--<a href="#" data-name="Citrus Kombucha Mezcal Cocktail" data-price="12.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+
+								<div class="menu_item">
+								    <p class="menu-title">Long Island Iced Tea</p>
+								    <span class="price">$8.00</span>
+								    <!--<a href="#" data-name="Long Island Iced Tea" data-price="8.00" class="add-to-cart btn btn-primary">
+								    	<span class="fas fa-plus fa-xs"></span>
+								    </a>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		</div>
+
+		
+
+
+
+			
+		<footer id="footer">
+			<div class="col3">
+			<a href="index.html"><img alt="Jungle Food Logo" id="footer-logo" src="images/Logo.png" width="175px" /></a>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="about.html">About</a>
+							<ul class="footer-submenu">
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="locations.html">Locations</a></li>
+							</ul>
+						</li>
+						<li><a href="menus.html">Menus</a>
+							<ul class="footer-submenu">
+								<li><a href="specials.html">Specials</a></li>
+							</ul>
+							</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="giftcards.html">Gift Cards</a></li>
+						<li><a href="contests.html">Contests</a></li>
+						<li><a href="events.html">Events & Booking</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="copyright">Copyright &copy; 2019 | Jungle Food Restaurant</div>
+
+		</footer>
+	</body>
+</html>

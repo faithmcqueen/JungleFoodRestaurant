@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jungle Food Restaurant</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="scripts/homepage.js" ></script>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<h1 class="hidden">Jungle Food Restaurant</h1>
+			<a href="index.html"><img alt="Jungle Food Logo" id="logo" src="images/Logo.png" width="125px" /></a>
+			<!-- NAV MENU -->
+			<nav id="navigation">
+				<ul id="main-menu">
+					<li id="link1"><a href="about.html">About</a></li>
+					<li id="link2"><a href="menu.html">Menus</a></li>
+					<li id="link3"><a href="contests.html">Contests</a></li>
+					<li id="link4"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="page-container"><!-- start page container -->
+				<h1>Jungle Food Restaurant</h1>
+				<h2 id="subheading">Enjoy exotic flavour and a wild dining experience!</h2>
+			<!-- SPECIALS SECTION -->
+			<section id="specials-flex"> 
+				<div id="specialMonday" class="specials-container">
+					<img src="images/margarita.jpg" alt="Margarita in a glass on table" class="special-img" />
+					<h3>Today's Special: Margarita Monday</h3>
+					<p>Ring in happy hour with $5 margaritas all night long!</p>
+				</div>
+				<div id="specialTuesday" class="specials-container">
+					<img src="images/tacos.jpg" alt="Three tacos on a plate" class="special-img" />
+					<div class="specialcontent">
+						<h3>Today's Special: Taco Tuesday</h3>
+						<p>Enjoy a taste of Mexico with our Taco Tuesday special! 3 tacos for just $10.</p>
+					</div>
+				</div>
+				<div id="specialWednesday" class="specials-container">
+					<img src="images/wings.jpg" alt="Breaded chicken wings" class="special-img" />
+					<div class="specialcontent">
+						<h3>Today's Special: Wild Wing Wednesday</h3>
+						<p>Wednesday is here, and we have the wildest wings in town. Enjoy our signature wings, 1lb for just $15.</p>
+					</div>
+				</div>
+				<div id="specialThursday" class="specials-container">
+					<img src="images/shuckpic.jpg" alt="Fresh oysters in ice bath" class="special-img" />
+					<div class="specialcontent">
+						<h3>Today's Special: Buck-A-Shuck Thursdays</h3>
+						<p>Get ready for seafood! Enjoy $1 per oyster, all you can eat.</p>
+					</div>
+				</div>
+				<div id="specialFriday" class="specials-container">
+					<img src="images/cocktail.jpg" alt="Two women clinking cocktails in cheers" class="special-img" />
+					<div class="specialcontent">
+						<h3>Today's Special: Cocktail Fridays</h3>
+						<p>TGIF! Say goodbye to the work week and enjoy our cocktail specials from 5pm-midnight.</p>
+					</div>
+				</div>
+				<div id="specialSaturday" class="specials-container">
+					<img src="images/nachos.jpg" alt="Close up of plate of nachos" class="special-img" />
+					<div class="specialcontent">
+						<h3>Today's Special: Nacho Night</h3>
+						<p>Bring the whole crowd, because these nachos are enough to feed everyone! From 7pm-10pm enjoy our world-famous nachos for just $17.</p>
+					</div>
+				</div>
+				<div id="specialSunday" class="specials-container">
+					<h3>Sorry, we're closed!</h3>
+					<p>Thanks for visiting Jungle Food Restaurants! The Jungle is closed on Sundays, while we gear up and prep next week's exciting specials. If you're planning out your week, viist our <a href="specials.html">Specials page</a> for details on our upcoming weekly specials.</p>
+				</div>
+			</section> 
+			<!-- MENU SECTION -->
+			<section id="menu">
+				<h3>Our Menu</h3>
+				<div class="menu-flex">
+				<div class="menucontainer">
+					<img src="images/guacamole.jpg" alt="chips and guacamole on table" class="menu-img" id="appimg" />
+					<div id="appcontent" class="menucontent">
+						<p class="tabtitle">Appetizers</p>
+							<ul class="menu-list">
+								<li>Nachos</li>
+								<li>Guacamole & Chips</li>
+								<li>Yuca Fritas</li>
+								<li>Calamari</li>
+							</ul>
+					</div> <!-- END menu content-->
+				</div><!-- END menu container -->
+				<div class="menucontainer">
+					<img src="images/avocado-toast.jpg" alt="Avocado toast on a plat" class="menu-img" id="breakimg" />
+					<div id="bfastcontent" class="menucontent">
+						<p class="tabtitle">Breakfast</p>
+						<ul class="menu-list">
+							<li>Arepas</li>
+							<li>Coconut French Toast</li>
+							<li>Acai Bowl</li>
+							<li>Yuca-Bacon Breakfast Tacos</li>
+							<li>Avocado Toast with Eggs</li>
+							<li>Spanish Omelette</li>
+						</ul>
+					</div> <!-- END menu content-->
+				</div><!-- END menu container -->
+				<div class="menucontainer">
+					<img src="images/burrito.jpg" alt="Chicken burrito with vegetables" class="menu-img" id="mainimg" />
+					<div id="maincontent" class="menucontent">
+						<p class="tabtitle">Mains</p>
+						<ul class="menu-list">
+							<li>Tacos</li>
+							<li>Burrito</li>
+							<li>Fajitas</li>
+							<li>Pineapple Pork Chops</li>
+							<li>Garlic Scampi</li>
+							<li>Guacamole Black Bean Burger</li>
+						</ul>
+					</div> <!-- END menu content-->
+				</div><!-- END menu container -->
+				<div class="menucontainer">
+					<img src="images/cocktail-menu.jpg" alt="Row of cocktails on a bar" class="menu-img" id="cocktailimg" />
+					<div id="drinkcontent" class="menucontent">
+						<p class="tabtitle">Cocktail List</p>
+						<ul class="menu-list">
+							<li>Sangria</li>
+							<li>Long Island Iced Tea</li>
+							<li>Piña Colada</li>
+							<li>Mezcal Margaritas</li>
+							<li>Pineapple Whisky Sour</li>
+							<li>Citrus Kombucha Mezcal Cocktail</li>
+						</ul>
+					</div> <!-- END menu content-->
+				</div><!-- END menu container -->
+				<div class="menucontainer">
+					<img src="images/cake-dessert.jpg" alt="Cake decorated on a plate" class="menu-img" id="dessertimg" />
+					<div id="dessertcontent" class="menucontent">
+						<p class="tabtitle">Dessert</p>
+						<ul class="menu-list">
+							<li>Volcano Sundae</li>
+							<li>Arroz con Leche</li>
+							<li>Lilikoi Shaved Ice</li>
+							<li>Churro Cheesecake</li>
+						</ul>
+					</div> <!-- END menu content-->
+				</div><!-- END menu container -->
+			</div><!-- END menu-flex -->
+			</section>
+			<section id="booking-form">
+				<h3>Book a table today!</h3>
+				<form action="#" method="post" id="book_form" name="reso_form">
+				<!-- NAME -->
+				<div class="input">
+					<label class="label" for="book_name">Please enter your name.</label>
+					<input type="text" id="book_name" name="b_name" placeholder="Example: John Smith"/>
+				</div>
+				<!-- EMAIL -->
+				<div class="input">
+					<label class="label" for="book_email">Please enter your email.</label>
+					<input type="text" id="book_email" name="b_email" placeholder="example@example.com"/>
+				</div>
+				<!-- PHONE -->
+				<div class="input">
+					<label class="label" for="book_phone">Please enter your phone number.</label>
+					<input type="text" id="book_phone" name="b_phone" placeholder="012-345-6789"/>
+				</div>
+				<!-- DATE -->
+				<div class="input">
+					<label class="label" for="book_date">Please select the date.</label>
+					<input type="text" id="book_date" name="b_date" placeholder="MM/DD/YYYY" />
+				</div>
+				<!-- NUMBER OF GUESTS -->
+				<div class="input">
+					<label class="label" for="book_guests">How many guests are dining?</label>
+					<input type="text" id="book_guests" name="b_guest" />
+				</div>
+				<!-- Submit button -->
+				<input type="submit" class="contact-button" value="Book Table" name="submit" />
+			</form>
+			</section>
+		</div><!-- END PAGE CONTAINER -->
+		<!-- FOOTER SECTION -->
+		<footer id="footer">
+			<div class="col3">
+			<a href="index.html"><img alt="Jungle Food Logo" id="footer-logo" src="images/Logo.png" width="175px" /></a>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="about.html">About</a>
+							<ul class="footer-submenu">
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="locations.html">Locations</a></li>
+							</ul>
+						</li>
+						<li><a href="menus.html">Menus</a>
+							<ul class="footer-submenu">
+								<li><a href="specials.html">Specials</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="giftcards.html">Gift Cards</a></li>
+						<li><a href="contests.html">Contests</a></li>
+						<li><a href="events.html">Events & Booking</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="copyright">Copyright &copy; 2019 | Jungle Food Restaurant</div>
+		</footer>
+	</body>
+</html>

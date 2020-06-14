@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title collumn2>Jungle Food Restaurant</title collumn2>
+		<meta charset="utf-8">
+		<!-- <script type="text/javascript" src="scripts/homepage.js" ></script> -->
+		
+
+
+		<script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="scripts/script.js" ></script>
+	    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- <link rel="stylesheet" href="styles/style.css" /> -->
+		<link rel="stylesheet" type="text/css" href="styles/menu_book_style.css">
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1 class="hidden">Jungle Food Restaurant</h1>
+			<a href="index.html"><img alt="Jungle Food Logo" id="logo" src="images/Logo.png" width="125px" /></a>
+
+			<!-- nav menu -->
+			<nav id="navigation">
+				<ul id="main-menu">
+					<li id="link1"><a class="events_link" href="about.html">About</a></li>
+					<li id="link2"><a class="events_link" href="menu.html">Menus</a></li>
+					<li id="link3"><a class="events_link" href="contests.html">Contests</a></li>
+					<li id="link4"><a class="events_link" href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<div id="page-container">
+		<div class="page-wrapper">
+			<h1 class="center_headings">Events</h1>
+			<main>
+				<div id="event_info" class="text-white">
+				Escape to a tropical adventure at one of our 3 locations. Each venue can host up to 150 people with plenty of greenery, hand-painted murals, and an open kitchen for you and your guests to witness our chefs working their craft. <br/>
+
+
+				Catering and special events are opportunities for us to work together to help host the ideal event for you and your guests.
+				To help us design the right package for you, please fill out the form below and tell us a little more about your event. 
+				</div>
+
+				<h2 class="center_headings heading_white events_toggleColour">Gallery</h2>
+				<div id="events_gallery" class="gal-container">
+
+					
+					
+						<div class="collumn"> 
+							<img class="events_img" src="images/events_1.jpg">
+							<!-- IMG SRC: https://www.arabianbusiness.com/gourmet/422132-review-mama-zonia-is-breath-of-fresh-air -->
+							<!-- IMAGES ARE USED WITHOUT PERMISSION FOR EDUCATIONAL PURPOSES ONLY -->
+							<div class="events_centered">
+								<a href="#" class="centered events_link">Weddings</a>
+							</div>
+						</div>
+						<div class="collumn"> 
+							<img class="events_img" src="images/events_2.jpg">
+							<!-- IMG SRC: https://www.facebook.com/mamazoniadxb/photos/a.153805605563729/423999108544376/?type=3&theater-->
+							<!-- IMAGES ARE USED WITHOUT PERMISSION FOR EDUCATIONAL PURPOSES ONLY -->
+							<div class="events_centered">
+								<a href="#" class="centered events_link">Parties</a>
+							</div>
+						</div>
+						<div class="collumn"> 
+							<img class="events_img" src="images/events_3.jpg">
+							<!-- IMG SRC: https://www.esquireme.com/content/35730-review-welcome-to-the-jungle-at-dubais-mama-zonia-restaurant -->
+							<!-- IMAGES ARE USED WITHOUT PERMISSION FOR EDUCATIONAL PURPOSES ONLY -->
+							<div class="events_centered">
+								<a href="#" class="centered events_link">Private Events</a>
+							</div>
+						</div>
+					
+				</div>
+
+
+				<div id=form_id>
+					<h2 class="center_headings heading_white events_toggleColour">Event Form</h2>
+					<div class="events_contentBox">
+						<form id="events_form" name = "events_form">
+							<fieldset >
+			 					<div class="event-form-contatiner">
+									<label class="title collumn2">Name<span class="required">*</span></label>
+									<input id="events_username" class="text_field collumn3" name="inName">
+								</div>
+
+								<div class="event-form-contatiner">
+									<label class="title collumn2">Phone Number<span class="required">*</span></label>
+									<input id="events_phonenumber" class="text_field collumn3" name="inPhone">
+								</div>
+
+								<div class="event-form-contatiner">
+									<label class="title collumn2">Email Address<span class="required">*</span></label>
+									<input id="events_email" class="text_field collumn3" name="inEmail">
+								</div>
+
+								<div class="event-form-contatiner">
+									<label class="title collumn2">Number of Guests<span class="required">*</span></label>
+									<input id="events_guests" class="text_field collumn3" name="inGuestNumber">
+								</div>
+
+								<div class="event-form-contatiner">
+									<label for="events_locations" class="title collumn2">Location<span class="required">*</span></label>
+									<div id="events_location_wrapper" class="text_field collumn3">
+									    <select name="events_location" id="events_locations">
+									      <option disabled selected value="none">Please Select One</option>
+									      <option value="Amazon Rainforest">Amazon Rainforest</option>
+									      <option value="Lacand&#243;n Jungle">Lacand&#243;n Jungle</option>
+									      <option value="Osa Peninsula">Osa Peninsula</option>
+									    </select>
+									</div>
+								</div>
+
+								<div class="event-form-contatiner">
+									<label class="title collumn2">Event Date</label>
+									 <input type="hidden" name="date" id="date">
+									<div id="datepicker" class="text_field collumn3" name="inEventDate"></div>
+								</div>
+
+								<div class="event-form-contatiner">
+									<label class="title collumn2">Additional Information</label>
+									<input id="events_addinfo" class="text_field" name="inAddInfo">
+								</div>
+								<div id="events_submitButton">
+									<input id="events_formSubmit" type="submit" name="Submit">
+								</div>
+
+							</fieldset>
+						</form>
+					</div>
+
+					<div id="events_confirmationMsg">
+						<h3>Thank you <span id="events_customerName"></span> for your inquiry</h3>
+						<p>We will contact you at <span id="events_customerEmail"></span> with more information on how we can help you host a memorable event for you and your guests at Jungle Foods. <br/> We look forward to working together.</p>
+						
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+
+			
+		<footer id="footer">
+			<div class="col3">
+			<a href="index.html"><img alt="Jungle Food Logo" id="footer-logo" src="images/Logo.png" width="175px" /></a>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="about.html">About</a>
+							<ul class="footer-submenu">
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="locations.html">Locations</a></li>
+							</ul>
+						</li>
+						<li><a href="menu.html">Menus</a>
+							<ul class="footer-submenu">
+								<li><a href="specials.html">Specials</a></li>
+							</ul>
+							</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="giftcards.html">Gift Cards</a></li>
+						<li><a href="contests.html">Contests</a></li>
+						<li><a href="events.html">Events & Booking</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="copyright">Copyright &copy; 2019 | Jungle Food Restaurant</div>
+
+		</footer>
+	</body>
+</html>

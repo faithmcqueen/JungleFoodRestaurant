@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jungle Food Restaurant: Contact</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="scripts/contact.js"></script>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<h1 class="hidden">Jungle Food Restaurant</h1>
+			<a href="index.html"><img alt="Jungle Food Logo" id="logo" src="images/Logo.png" width="125px" /></a>
+
+			<!-- nav menu -->
+			<nav id="navigation">
+				<ul id="main-menu">
+					<li id="link1"><a href="about.html">About</a></li>
+					<li id="link2"><a href="menu.html">Menus</a></li>
+					<li id="link3"><a href="contests.html">Contests</a></li>
+					<li id="link4"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="page-container">
+		<h1>Get in touch with us!</h1>
+		<span>Select a button below for what you would like to do.</span>
+		<div id="buttons">
+			<button class="contact-button" id="resobtn" type="button">Book A Table</button>
+			<button class="contact-button" id="reviewbtn" type="button">Leave A Review</button>
+			<button class="contact-button" id="contactbtn" type="button">General Inquiry</button>
+		</div>
+		<div id="form1">
+			<h2>Book a table</h2>
+			<form action="#" method="post" id="resoform" name="reso_form">
+				<!-- NAME -->
+				<div class="input">
+					<label class="label" for="reso_name">Please enter your name.</label>
+					<input type="text" id="reso_name" name="r_name" placeholder="Example: John Smith"/>
+				</div>
+				<!-- EMAIL -->
+				<div class="input">
+					<label class="label" for="reso_email">Please enter your email.</label>
+					<input type="text" id="reso_email" name="r_email" placeholder="example@example.com"/>
+				</div>
+				<!-- PHONE -->
+				<div class="input">
+					<label class="label" for="reso_phone">Please enter your phone number.</label>
+					<input type="text" id="reso_phone" name="r_phone" placeholder="012-345-6789"/>
+				</div>
+				<!-- DATE -->
+				<div class="input">
+					<label class="label" for="reso_date">Please select the date.</label>
+					<input type="text" id="reso_date" name="r_date" placeholder="MM/DD/YYYY" />
+				</div>
+				<!-- NUMBER OF GUESTS -->
+				<div class="input">
+					<label class="label" for="reso_guests">How many guests are dining?</label>
+					<input type="text" id="reso_guests" name="r_guest" />
+				</div>
+				<!-- Submit button -->
+				<input type="submit" class="contact-button" value="Book Table" name="submit" />
+			</form>
+		</div>
+		<div id="form2">
+			<h2>Leave a restaurant review</h2>
+			<form action="#" method="post" id="reviewform" name="review_form">
+				<!-- NAME -->
+				<div class="input">
+					<label class="label" for="review_name">Please enter your name.</label>
+					<input type="text" id="review_name" name="v_name"  placeholder="Example: John Smith" />
+				</div>
+				<!-- EMAIL -->
+				<div class="input">
+					<label class="label" for="review_email">Please enter your email.</label>
+					<input type="text" id="review_email" name="v_email" placeholder="example@example.com"/>
+				</div>
+				<!-- PHONE -->
+				<div class="input">
+					<label class="label" for="review_phone">Please enter your phone number.</label>
+					<input type="text" id="review_phone" name="v_phone" placeholder="012-345-6789"/>
+				</div>
+				<!-- DATE -->
+				<div class="input">
+					<label class="label" for="review_date">What date did you dine?</label>
+					<input type="text" id="review_date" name="v_date" placeholder="MM/DD/YYYY" />
+				</div>
+				<!-- REVIEW CONTENT -->
+				<div class="input">
+					<label class="label" for="review_txt">Please leave your review below.</label>
+					<textarea id="review_txt" name="v_txt"></textarea>
+				</div>
+				<!-- SUBMIT BUTTON -->
+				<input type="submit" class="contact-button" value="Leave Review" name="submit" />
+			</form>
+		</div>
+		<div id="form3">
+			<h2>Send a general inquiry</h2>
+			<form action="#" method="post" id="contactform" name="contact_form">
+				<!-- NAME -->
+				<div class="input">
+					<label class="label" for="contact_name">Please enter your name.</label>
+					<input type="text" id="contact_name" name="c_name" placeholder="Example: John Smith" />
+				</div>
+				<!-- EMAIL -->
+				<div class="input">
+					<label class="label" for="contact_email">Please enter your email.</label>
+					<input type="text" id="contact_email" name="c_email" placeholder="example@example.com"/>
+				</div>
+				<!-- PHONE -->
+				<div class="input">
+					<label class="label" for="contact_phone">Please enter your phone number.</label>
+					<input type="text" id="contact_phone" name="c_phone" placeholder="012-345-6789"/>
+				</div>
+				<!-- NUMBER OF GUESTS -->
+				<div class="input">
+					<label class="label" for="message">Please leave your message below.</label>
+					<textarea id="message" name="message"></textarea>
+				</div>
+				<!-- SUBMIT BUTTON -->
+				<input type="submit" class="contact-button" value="Send Message" name="submit" />
+			</form>
+		</div>
+		<div id="errormssg"></div>
+	</div>
+	<!-- FOOTER SECTION -->
+		<footer id="footer">
+			<div class="col3">
+			<a href="index.html"><img alt="Jungle Food Logo" id="footer-logo" src="images/Logo.png" width="175px" /></a>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="about.html">About</a>
+							<ul class="footer-submenu">
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="locations.html">Locations</a></li>
+							</ul>
+						</li>
+						<li><a href="menu.html">Menus</a>
+							<ul class="footer-submenu">
+								<li><a href="specials.html">Specials</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col3">
+				<nav id="footernav">
+					<ul id="footer-menu">
+						<li><a href="giftcards.html">Gift Cards</a></li>
+						<li><a href="contests.html">Contests</a></li>
+						<li><a href="events.html">Events & Booking</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="copyright">Copyright &copy; 2019 | Jungle Food Restaurant</div>
+		</footer>
+	</body>
+</html>

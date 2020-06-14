@@ -1,0 +1,938 @@
+/* ######## GENERAL STYLE - JUNGLE FOOD ########### */
+/**** TABLE OF CONTENTS ******
+ * 1. BASIC/DEFAULT STYLES
+ * 2. NAVIGATION STYLES
+ * 3. FOOTER STYLES
+ * 4. HOMEPAGE STYLES
+ * 5. CONTACT STYLES
+ * 6. ABOUT STYLES
+ * 7. CAREERS STYLES
+ * 8. GIFT CARD STYLES
+ * 9. SITEMAP STYLES
+ * 10. LOCATIONS STYLES
+ * 11. CONTEST STYLES
+ * 12. SPECIALS STYLES
+ * 13. MENUS STYLES
+ * 14. BOOKING AND EVENTS STYLES
+ * 15. RESPONSIVE STYLE
+**************************************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Merienda|Roboto+Condensed&display=swap');
+
+/* 1. BASIC/DEFAULT STYLES */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("Background-image/background.png");
+    background-size: 100%; 
+}
+
+span {
+	color: #fff;
+	padding: 10px;
+}
+
+.page-wrapper {
+	max-width: 980px;
+	margin:0 auto;
+}
+
+main {
+    /*width: 80%;*/
+    margin: 0 auto;
+}
+
+
+h2 {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+a:hover {
+  color: #264653;
+}
+
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: -1000000px; 
+}
+
+#page-container {
+    background: black;
+    /*opacity: .85;*/
+    background:rgba(0,0,0,0.8); 
+    margin-right: 5vw; 
+    margin-left:5vw;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    margin-top:2em;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    margin:0;
+    padding-top: 1em;
+    font-family: 'Merienda', cursive;
+    font-size: 3vw;
+    color:white;
+    text-align:center;
+}
+
+h2, h3 {
+	color:#fff;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vw;
+	letter-spacing:0.1em;
+}
+
+.center_headings{
+	text-align: center;
+}
+
+.heading_white{
+    font-family: 'Merienda', cursive!important;
+    color:white;
+    font-size: 2em;
+}
+
+.text-white{
+    text-align: center; 
+    font-size:25px;
+    color:white !important; 
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+/* 2. NAVIGATION STYLES */
+
+#logo {
+	display: inline-block;
+	margin-left: 15em;
+}
+
+#header {
+	background-color: #576f37;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#main-menu {
+	list-style: none;
+	padding: 0;
+
+}
+
+#navigation {
+	display: inline-block;
+	margin-right: 15em;
+	margin-left: 3em;
+	margin-top: 2em;
+	position: absolute;
+}
+
+
+#main-menu li {
+	display: inline-block;
+	margin-bottom: 0;
+	position: relative;
+	font-size: 1.25em;
+}
+
+#main-menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 1em;
+	display: inline-block;
+	color: #fff;
+
+}
+
+#main-menu a:hover {
+	color: #264653;
+}
+
+/* 3. FOOTER STYLES */
+
+#footer {
+	width:100%;
+	margin: 0 auto;
+	background-color: #576f37;
+}
+
+.col3 {
+	display: inline-block;
+	width: 33%;
+	vertical-align: middle;
+}
+
+#footer-menu li {
+	color: #fff;
+	list-style: none;
+	padding-bottom: 0.25em;
+	text-transform: uppercase;
+}
+
+#footer-menu a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer-menu a:hover {
+	color: #264653;
+}
+
+#footer-logo {
+	padding-top: 1em;
+	margin-left: 15em;
+}
+
+#copyright {
+	font-size: 0.75em;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+
+/* 4. HOMEPAGE STYLES */
+
+#homepagebanner {
+	width: 100%;
+	height: auto;
+	margin: auto 0;
+	background-color: #006700;
+	color: #fff;
+	text-align: center;
+}
+
+#subheading {
+	text-align: center;
+}
+
+.special-img {
+	max-width: 200px;
+	display: inline-block;
+}
+
+.menu-flex {
+	display: flex;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.menu-container {
+	flex: 1;
+}
+
+.menu-img {
+	width: 100%;
+	height: auto;
+	padding: 1em;
+}
+
+.menucontent {
+	padding: 1em;
+	width: 100%;
+	text-align: left;
+	border-radius: 10px;
+    background-color: white;
+    padding: 2em;
+    margin:1em;
+}
+
+.specials-flex {
+	display: flex;
+}
+
+.specials-container {
+	flex: 1;
+}
+
+.specialcontent {
+	display: inline-block;
+	padding-left: 2em;
+	max-width: 67%;
+	vertical-align: top;
+	color: #fff;
+}
+
+.special-img {
+	max-width: 33%;
+	height: auto;
+	padding-left: 3em;
+}
+
+/* 5. CONTACT STYLES */
+
+form {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+input, textarea {
+	width: 100%;
+}
+
+textarea {
+	height: 100px;
+}
+
+.input {
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+.label {
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.contact-button {
+	margin:0.5em;
+	background-color:#246a86;
+	color:#fff;
+	font-weight:bold;
+	font-size:1em;
+	padding:0.5em;
+	width:150px;
+	border-radius:12px;
+}
+
+.contact-button:hover {
+	background-color:#576f37;
+}
+
+
+/* 6. ABOUT STYLES */
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vw;
+    text-align: center;
+    color:white;
+    padding-bottom:0;
+    padding:0px;
+    margin-bottom:0px;
+    
+}
+#summary-about{
+    text-align: center; 
+    font-size:25px;
+    color:white;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+.history-img {
+    width:100%;
+    margin:0;
+}
+img:hover{
+    opacity: 0.70;
+}
+.history-flex-container{
+    display: flex;
+}
+.history-container{
+    flex: 1;
+}
+.history-hidden{
+    border-radius: 10px;
+    background-color: white;
+    padding: 2em;
+    margin:1em;
+}
+
+/* 7. CAREERS STYLES */
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vw;
+}
+.position{
+    color: green;
+}
+
+#careers-summary{
+    text-align: center; 
+    font-size:25px;
+    color:white;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+.career-container{
+    border: 2px green solid;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background: white; 
+    padding:0.8em;
+    margin: 2em 12em; 
+}
+.career-container:hover {
+    opacity: 0.8;
+}
+.career-container .button {
+    font-size: 0.7em;
+}
+
+/* 8. GIFT CARD STYLES */
+
+#in_giftcardname, #in_giftcardamount {
+	width: 50%;
+}
+
+#form_div h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	padding:0.5em;
+	
+}
+#gift-1, #gift-2, #gift-3 {
+	max-width:250px;
+	max-height:137.25px;
+	padding-left:2em;
+}
+#gift-1 {
+	padding-left:0;
+}
+#gift-bg {
+	max-width:300px;
+	max-height:auto;
+}
+#page-container {
+	text-align:center;
+}
+fieldset {
+	border:none;
+}
+#finalgiftcard {
+	position:relative;
+	padding-bottom:1.5em;
+}
+#giftcard-content {
+	position:absolute;
+	width:100%;
+	z-index:100;
+}
+#giftc_name {
+	margin-top:160px;
+	margin-left:-170px;
+}
+#giftc_amount {
+	margin-top:-180px;
+	margin-left:-200px;
+}
+#giftcards_clientdesign img {
+	display:block;
+	margin:0 auto;
+}
+.button {
+	margin:0.5em;
+	background-color:#246a86;
+	color:#fff;
+	font-weight:bold;
+	font-size:1em;
+	padding:0.5em;
+	width:85px;
+	border-radius:12px;
+}
+
+/* 9. SITEMAP STYLES */
+.sitemap_title {
+	position:absolute;
+	width:100%;
+	z-index:100;
+}
+.sitemap_titles {
+	position:relative;
+}
+.sitemap_names {
+	color:#fff;
+	margin-top:42px;
+}
+.sitemap_img img {
+	display:block;
+	margin:0 auto;
+	max-width:150px;
+	max-height:auto;
+	padding:1em;
+}
+.sitemap_img {
+	margin:0;
+}
+#flex-container {
+	display:flex;
+	flex-flow:row wrap;
+	padding:1em;
+}
+#flex-container a {
+	text-decoration:none;
+}
+#titles-aboutus, #titles-menus, #titles-events, #titles-contests, #titles-giftcards {
+	flex:1 0 0;
+
+}
+.hidden {
+	position:absolute;
+	left:-10000px;
+	width:1px;
+	height:1px;
+}
+
+/* 10. LOCATIONS STYLES */
+
+#location_sub {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	padding:0.5em;
+}
+.location_div{
+	max-width:500px;
+	margin: 0 auto;
+}
+
+.map {
+	padding:1em;
+}
+.location_title{
+	color:#000;
+}
+.location_div{
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background: white; 
+    padding:0.8em;
+	margin-bottom:2em;
+
+}
+
+/*  10. CONTEST STYLES */
+.content{
+  max-width: 90%;
+  background-color: #2A9dbf;
+  margin: auto;
+  padding: 10px;
+}
+/* Countdown text*/
+.countdown{
+  text-align: center;
+}
+.output{
+  margin: 0;
+}
+#numbers{
+  margin: 0;
+  color: black;
+  font-size: 60px;
+}
+/* Game styles */
+.con{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+  max-width: 90%;
+  margin: auto;
+}
+.animate{
+  animation: 0.4s ease-out 0s 1 normal both running flip-card;
+ }
+ /* Css for the cards */
+ .card {
+  width:150px;
+  height:  150px;
+  transform-style: preserve-3d;
+  margin: 2px;
+}
+.contest-img{
+	width: 100%;
+	height: 100%;
+}
+.front{
+  background: #2dccb8;
+  z-index: 20;
+}
+.face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.back{
+  transform: rotateX(180deg);
+  background: #53a3dc;
+  z-index: 10;
+}
+.flip-card {
+    animation: flip-card 0.4s ease-out both;
+}
+
+  @keyframes flip-card {
+  0% {
+      transform: rotateX(0);
+  }
+  100% {
+      transform: rotateX(-180deg);
+  }
+}
+/* Button styles (games) */
+.buttons{
+  margin: auto;
+  text-align: center;
+}
+.buttons button{
+  width: 75px;
+  background-color: #2dccb8;
+  height: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* 11. SPECIALS STYLES */
+/* Specials container */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 90%;
+}
+
+.special_img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Every day is an item */
+.item {
+  margin-bottom: 10px;
+  background-color: #2A9dbf;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.row1{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+} 
+.col{
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+/* Images for the specials */
+.image{
+  width: 600px;
+  height: 500px;
+  float: right;
+}
+/* Text for specials */
+.text{
+  width: 500px;
+  font-size: 25px;
+}
+
+/* 13. MENU STYLES */
+
+.page-wrapper {
+	max-width: 980px;
+	margin:0 auto;
+}
+
+main {
+    /*width: 80%;*/
+    margin: 0 auto;
+}
+
+
+h2 {
+	text-align: center;
+	border-bottom: solid 1px;
+	padding-bottom: 5px;
+}
+
+a:hover {
+  color: #264653;
+}
+
+.center_headings{
+	text-align: center;
+}
+
+.heading_white{
+    font-family: 'Merienda', cursive!important;
+    color:white;
+    font-size: 2em;
+}
+
+.text-white{
+    text-align: center; 
+    font-size:25px;
+    color:white !important; 
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+
+/* ---------- MENU PAGE ---------- */
+
+#menu_info {
+	width: 90%;
+    margin: auto;
+    margin-bottom:8px;
+    text-align: center;
+    font-size: 1.02em;
+}
+
+.menubox{
+	width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+ #tabs { 
+    text-align: center; 
+} 
+	
+#tabs li { 
+    display: inline-block; 
+    float: none; 
+}
+
+.menu-title{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.menu_item {
+	border-bottom: dotted 1px grey;
+	text-align: right;
+	margin-right: 20px;
+	margin-left: 40px;
+}
+
+.menu_icon{
+	max-height: 35px;
+    width: auto;
+}
+
+.menu_img {
+	width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.menu_flex{
+	display:flex;
+}
+.menu_img, .menu_aside{
+	flex: 1;
+	width: 50%;
+}
+
+/* --- TAB COLOUR -- */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: #576f37;
+    background: #246a86;
+}
+
+.ui-tabs-anchor:active, .ui-tabs-anchor:focus{
+     outline:none;
+}
+
+/*.ui-tabs ui-corner-all ui-widget ui-widget-content {
+	background: black;
+	border: none;
+}
+
+.menu_section {
+	background: black;
+	border: none;
+}*/
+
+/*#tabs *{
+	background:black;
+}
+*/
+/* ---------- EVENTS PAGE ---------- */
+
+#event_info {
+	width: 90%;
+    margin: auto;
+    margin-bottom:8px;
+    text-align: center;
+    font-size: 1.02em;
+}
+
+
+/* --- EVENTS - GALLERY --- */
+
+.events_img {
+	width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.events_centered {
+	text-align: center;
+}
+
+.centered {
+	display: inline-block;
+}
+
+a.events_link {
+	text-decoration: none;
+}
+
+a.events_link:hover {
+	color: #246a86;
+}
+.gal-container{
+	display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    align-content: flex-start;
+	justify-content: center
+}
+.event-form-contatiner{
+	display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    align-content: flex-start;
+	justify-content: center
+}
+.collumn{
+	width: 33%;
+}
+.collumn3{
+	width: 50%;
+}
+.collumn2{
+	width: 20%;
+}
+.collumn4{
+	width: 20%;
+}
+
+/* --- EVENTS - FORM --- */
+
+label, input {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+label {
+	text-align:right;
+	padding-right:10px;
+}
+
+input {
+	border: solid lightgrey 1px;
+}
+
+.required{
+	color: red;
+}
+
+ .text_field{
+ 	margin-right: 20px;
+ 	color: black;
+ }
+
+.ui-selectmenu-button.ui-button {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.ui-datepicker-inline {
+ 	max-width: 100%;
+ 	margin-bottom: 5px;
+ }
+
+ .field-error{
+	display: inline-block;
+	color: red;
+	font-size: 0.75em;
+	margin: 10px 0;
+}
+
+#events_addinfo {
+	width: 50%;
+	height: 100px;
+}
+
+#events_submitButton {
+	text-align: center;
+}
+
+fieldset{
+	border: none;
+}
+
+.pure-button {
+	width:auto;
+}
+
+ #events_confirmationMsg {
+ 	display: none;
+ 	text-align: center;
+ 	color: white;
+ }
+
+ #events_customerEmail {
+ 	font-style: bold;
+ }
+
+ #events_formSubmit {
+ 	background-color: #246a86;
+ 	color:white;
+ }
+
+
+ #events_form > fieldset > div {
+   color :white;
+}
+
+
+a.events_link {
+	color: white;
+	font-size: 1.25em;
+}
+
+a.events_link:active {
+	color: #246a86
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (max-width: 768px){
+	#sidebar {
+		order:0;
+	}
+}
+
+@media screen and (max-width: 568px){
+	#sidebar {
+		order:0;
+	}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>Jungle Food Restaurant: Gift Cards</title>
+	<meta charset="utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="scripts/giftcards.js" ></script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="hidden">Jungle Food Restaurant</h1>
+		<a href="index.html"><img alt="Jungle Food Logo" id="logo" src="images/Logo.png" width="125px" /></a>
+		<!-- nav menu -->
+		<nav id="navigation">
+			<ul id="main-menu">
+				<li id="link1"><a href="about.html">About</a></li>
+				<li id="link2"><a href="menu.html">Menus</a></li>
+				<li id="link3"><a href="contests.html">Contests</a></li>
+				<li id="link4"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- page container -->
+	<div id="page-container">
+		<h1>Gift Cards</h1>
+		<h2 id="subtitle">Share the experience!</h2>
+			<div id="form_div">
+				<h3>Choose a design:</h3>
+				<div id="giftcards_design">
+					<img src="images/gift-1.png" id="gift-1"/>
+					<img src="images/gift-2.png" id="gift-2"/>
+					<img src="images/gift-3.png" id="gift-3"/>
+				</div>
+				<!-- start of form -->
+				<form action="#" method="post" id="giftcardform" name="form_gift">
+				<fieldset>
+					<fieldset>
+						<div id="giftcards_name">
+							<h3><label for="in_giftcardname">Name:</label></h3>
+								<input type="text" id="in_giftcardname" name="cus_name" placeholder="Name can include numbers." />
+						</div>
+						<div id="giftcards_amount">
+							<h3><label for="in_giftcardamount">Amount:</label></h3>
+								<input type="text" id="in_giftcardamount" name="cus_amt" placeholder="Number with 2 to 4 digits." />
+						</div>
+						<div id="giftcards_pickup">
+							<h3><label for="in_giftcardpickup">Pick-up Location:</label></h3>
+								<select id="in_giftcardpickup" name="cus_pickup">
+								  <option value="The Amazon, Brazil">The Amazon, Brazil</option>
+								  <option value="Lacandon Jungle, Mexico">Lacandon Jungle, Mexico</option>
+								  <option value="Osa Peninsula, Costa Rica">Osa Peninsula, Costa Rica</option>
+								</select>
+						</div>
+					</fieldset>
+					<input id="gc_btn" type="submit" value="Submit" name="submit" class="button"/>
+				</fieldset>
+				</form>
+				<!-- End form -->
+			</div>
+				<h2>Final Design:</h2>
+				<div id="finalgiftcard">
+					<div id="giftcard-content">
+					  <p id="giftc_name"></p>
+					  <p id="giftc_amount"></p>
+					</div>
+					<div id="giftcards_clientdesign">
+					<img src="images/gift-bg.png" id="gift-bg"/>
+					</div>
+				</div>
+	</div>
+	<footer id="footer">
+		<div class="col3">
+		<a href="index.html"><img alt="Jungle Food Logo" id="footer-logo" src="images/Logo.png" width="175px" /></a>
+		</div>
+		<div class="col3">
+			<!-- Footer nav -->
+			<nav id="footernav">
+				<ul id="footer-menu">
+					<li><a href="about.html">About</a>
+						<ul class="footer-submenu">
+							<li><a href="careers.html">Careers</a></li>
+							<li><a href="locations.html">Locations</a></li>
+						</ul>
+					</li>
+					<li><a href="menu.html">Menus</a>
+						<ul class="footer-submenu">
+							<li><a href="specials.html">Specials</a></li>
+						</ul>
+						</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col3">
+			<nav id="footernav">
+				<ul id="footer-menu">
+					<li><a href="giftcards.html">Gift Cards</a></li>
+					<li><a href="contests.html">Contests</a></li>
+					<li><a href="events.html">Events & Booking</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="copyright">Copyright &copy; 2019 | Jungle Food Restaurant</div>
+	</footer>
+</body>
+</html>
